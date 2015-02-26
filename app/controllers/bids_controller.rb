@@ -3,6 +3,7 @@ class BidsController < ApplicationController
   def create
     @bid = Bid.new(bid_params)
     @item = @bid.item
+    @bid.save
   end
 
 
